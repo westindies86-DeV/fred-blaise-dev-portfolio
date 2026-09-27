@@ -1,0 +1,16 @@
+﻿<rss version="2.0">
+<channel>
+<title>Fred Blaise Jr. Portfolio</title>
+<link>https://www.fred-blaise.is-a.dev/</link>
+<description>Projects and builds by Fred Blaise Jr.</description>
+<language>en-us</language>
+<lastBuildDate>Sat, 27 Sep 2026 00:00:00 GMT</lastBuildDate>
+<item>
+<title>JobSeeker Go Gold - Slack Community Against Bots</title>
+<link>https://www.fred-blaise.is-a.dev/</link>
+<guid>https://www.fred-blaise.is-a.dev/</guid>
+<description>Slack built in. A community going for the gold against the bots and scores.</description>
+<pubDate>Sat, 27 Sep 2026 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
