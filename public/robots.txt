@@ -1,0 +1,3 @@
+﻿User-agent: *
+Allow: /
+Sitemap: https://fred-blaise-portfolio.vercel.app/sitemap.xml
