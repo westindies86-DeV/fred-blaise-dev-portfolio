@@ -1,21 +1,83 @@
-ï»¿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fred Blaise Jr - Web Developer Binghamton NY</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fred Blaise Jr - Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,system-ui,sans-serif;background:#0a0a0a;color:#e5e5e5;line-height:1.6}
+.hero{position:relative;min-height:70vh;display:flex;align-items:center;justify-content:center;background:#111}
+.hero-content{position:relative;z-index:1;text-align:center;padding:2rem;max-width:900px}
+.badge{display:inline-block;background:#ffffff10;border:1px solid #ffffff20;border-radius:999px;padding:.4rem 1rem;font-size:.85rem;margin-bottom:1.5rem}
+.hero h1{font-size:clamp(2.5rem,6vw,4.5rem);font-weight:800;line-height:1.05;margin-bottom:1rem}
+.hero h1 span{background:linear-gradient(90deg,#60a5fa,#a78bfa,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:clamp(1rem,2.5vw,1.25rem);opacity:.8;max-width:650px;margin:0 auto 2rem}
+.btn{display:inline-block;background:#fff;color:#000;padding:.9rem 2rem;border-radius:999px;font-weight:600;text-decoration:none}
+.section{max-width:1200px;margin:0 auto;padding:5rem 1.5rem}
+.section h2{font-size:2.5rem;margin-bottom:.5rem}
+.section .sub{opacity:.6;margin-bottom:3rem;font-size:1.1rem}
+.newest{background:#151515;border-top:1px solid #ffffff10;border-bottom:1px solid #ffffff10}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5rem}
+.card{background:#1a1a1a;border:1px solid #ffffff10;border-radius:20px;overflow:hidden}
+.card img{width:100%;height:220px;object-fit:cover}
+.card-body{padding:1.5rem}
+.tag{display:inline-block;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;background:#ffffff10;padding:.25rem .6rem;border-radius:999px;margin-bottom:.8rem}
+.card h3{font-size:1.35rem;margin-bottom:.6rem}
+.card p{opacity:.7;font-size:.95rem;margin-bottom:1rem}
+.build{background:#ffffff08;border:1px dashed #ffffff15;border-radius:12px;padding:.9rem 1rem;margin-top:1rem}
+.build strong{display:block;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;opacity:.5;margin-bottom:.35rem}
+.build span{font-size:.9rem;opacity:.85}
+.footer{text-align:center;padding:3rem 1rem;opacity:.4;font-size:.85rem;border-top:1px solid #ffffff10}
+</style>
 </head>
-<body class="bg-[#0a0a0a] text-white">
-  <header class="max-w- mx-auto px-6 py-8 flex justify-between"><div class="font-bold text-">Fred Blaise Jr</div><nav class="text-zinc-400 text-">Binghamton, NY</nav></header>
-  <section class="max-w- mx-auto px-6 py-12">
-    <h2 class="text- sm:text- font-semibold tracking-tight text-white" style="font-family:Sora, sans-serif;">My Newest Projects</h2>
-    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-zinc-900 rounded- overflow-hidden border border-zinc-800"><div class="h- overflow-hidden"><img src="./assets/project1.jpg" alt="Small Motor Repairs and Co." class="w-full h-full object-cover" /></div><div class="p-5"><h3 class="text- font-semibold">Small Motor Repairs and Co.</h3></div></div>
-      <div class="bg-zinc-900 rounded- overflow-hidden border border-zinc-800"><div class="h- overflow-hidden"><img src="./assets/project2.jpg" alt="Festival" class="w-full h-full object-cover" /></div><div class="p-5"><h3 class="text- font-semibold">River Fest 2026</h3></div></div>
-      <div class="bg-zinc-900 rounded- overflow-hidden border border-zinc-800"><div class="h- overflow-hidden"><img src="./assets/project3.jpg" alt="Lawn Care" class="w-full h-full object-cover" /></div><div class="p-5"><h3 class="text- font-semibold">GreenEdge Lawn Care</h3></div></div>
+<body>
+<div class="hero">
+  <div class="hero-content">
+    <div class="badge">Available for freelance work</div>
+    <h1>Fred Blaise Jr - <span>Full Stack Developer</span></h1>
+    <p>I build fast, modern web experiences for small businesses - from motor shops to festivals to lawn care. Clean code, real results.</p>
+    <a class="btn" href="#newest">View Newest Work</a>
+  </div>
+</div>
+<section class="section newest" id="newest">
+  <h2>My Newest Projects</h2>
+  <p class="sub">Latest 3 builds - at the TOP where they belong. Custom background, real businesses.</p>
+  <div class="grid">
+    <div class="card">
+      <img src="./assets/project1.jpg" alt="Small Motor Repairs">
+      <div class="card-body">
+        <div class="tag">Newest - Small Business</div>
+        <h3>Small Motor Repairs and Co.</h3>
+        <p>Complete service booking site for a local repair shop. Customers can request repairs, track job status, and see pricing.</p>
+        <div class="build"><strong>How its built</strong><span>Next.js + Tailwind CSS + Vercel. Booking form with email API, image optimization, SEO for local search.</span></div>
+      </div>
     </div>
-  </section>
+    <div class="card">
+      <img src="./assets/project2.jpg" alt="Festival and Catering">
+      <div class="card-body">
+        <div class="tag">New - Events and Food</div>
+        <h3>Festival and Catering Website</h3>
+        <p>Vibrant festival site with menu showcase, event calendar, vendor sign-up and ticket info.</p>
+        <div class="build"><strong>How its built</strong><span>React + Framer Motion, Tailwind, CMS-ready, image gallery lazy loading, contact form.</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./assets/project3.jpg" alt="Lawn Care">
+      <div class="card-body">
+        <div class="tag">New - Service Business</div>
+        <h3>Lawn Care and Landscaping Website</h3>
+        <p>Professional lawn care site with service areas, before/after gallery, seasonal pricing, instant quote.</p>
+        <div class="build"><strong>How its built</strong><span>HTML5 / CSS Grid + vanilla JS, Google Maps embed, Formspree, image compression, SEO.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <h2>Previous Projects</h2>
+  <p class="sub">Earlier work - still live.</p>
+  <p>Contact: fred.blaise@fred-blaise.is-a.dev | ?entity-GitHub¦canonical_name=GitHub?: westindies86-DeV</p>
+</section>
+<div class="footer">2026 Fred Blaise Jr - Built with Vercel</div>
 </body>
 </html>
